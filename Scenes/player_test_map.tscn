@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://qto7sv2dxs62"]
+
+[ext_resource type="Texture2D" uid="uid://gtstbci5b8jp" path="res://Sprites/ShootywootyTesttileset.png" id="1_jk3es"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_2qjis"]
+texture = ExtResource("1_jk3es")
+texture_region_size = Vector2i(32, 32)
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+2:2/0 = 0
+1:2/0 = 0
+0:2/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_r8n2q"]
+tile_size = Vector2i(32, 32)
+physics_layer_0/collision_layer = 1
+sources/0 = SubResource("TileSetAtlasSource_2qjis")
+
+[node name="PlayerTestMap" type="TileMap" unique_id=464194855]
+tile_set = SubResource("TileSet_r8n2q")
+format = 2
